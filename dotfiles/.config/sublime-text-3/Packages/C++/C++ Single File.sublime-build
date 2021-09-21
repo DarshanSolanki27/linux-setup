@@ -1,0 +1,22 @@
+{
+	"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++",
+
+	"variants":
+	[
+		{
+			"name": "run",
+			"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+		},
+		{
+			"name": "fast_compile",
+			"shell_cmd": "g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" -O2 -Wno-unused-result -DLOCAL_DEFINE"
+		},
+		{
+			"name": "sanitize",
+			"shell_cmd":"g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" -g -fsanitize=address -fsanitize=undefined -DLOCAL_DEFINE"
+		}
+	]
+}

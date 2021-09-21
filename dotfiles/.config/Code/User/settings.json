@@ -1,0 +1,38 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Just Black",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.languageServer": "Pylance",
+    "code-runner.runInTerminal": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 }",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.restoreWindows": "none",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/home/kosmos/.local/bin/flake8",
+    "python.formatting.autopep8Path": "/home/kosmos/.local/bin/autopep8",
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+    ],
+    "editor.fontFamily": "'Cascadia Code', Fira Code, 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "synthwave84.disableGlow": false,
+    "synthwave84.brightness": 0.45,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.cursorBlinking": "expand"
+}

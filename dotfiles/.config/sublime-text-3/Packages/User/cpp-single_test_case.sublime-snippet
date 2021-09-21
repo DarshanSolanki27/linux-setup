@@ -1,0 +1,43 @@
+<snippet>
+  <content><![CDATA[
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <queue>
+#include <set>
+#include <stack>
+#include <string>
+#include <vector>
+
+using namespace std;
+using ll = long long;
+
+void solution() {
+	$1
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int tests;
+    cin >> tests;
+
+    solution();
+
+#ifdef LOCAL_DEFINE
+    cerr << "━━━━━━━━━━━━━━━━━" << '\n';
+    cerr << "Time : " << (float)clock() / CLOCKS_PER_SEC << "s" << '\n';
+#endif
+
+    return 0;
+}
+
+]]></content>
+  <tabTrigger>#0</tabTrigger>
+  <description>single test case c++</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
