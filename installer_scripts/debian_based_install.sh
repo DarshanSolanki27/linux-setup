@@ -3,25 +3,18 @@ Color_Off='\033[0m'
 Red='\033[0;31m'
 
 
-# Remove or comment packages according to requirement
-# NO BACKSLASH IN LAST PACKAGE OF THE LIST
+sudo add-apt-repository universe
+sudo add-apt-repository multiverse
+sudo apt update
 
-# apt installs
+# tools
+sudo apt install vim nano curl wget apt-transport-https software-properties-common gdebi-core
+
+# installs
 for package in \
-# Install tools
-    curl \
-    wget \
-    apt-transport-https \
-    software-properties-common \
-    gdebi-core \
 # Terminal
     kitty \
     zsh \
-# Browser
-    firefox \
-# nvidia
-    nvidia \
-    nvidia-utils \
 # C/C++
     build-essential \
 # Python
@@ -32,25 +25,23 @@ for package in \
 # Java
     default-jdk \
 # Office
-    libreoffice \
     okular \
 # Comms
     telegram-desktop \
-# Video
+# media player
     vlc \
 # other tools
     ncdu \
     ranger \
-# Text editors
-    nano \
-    vim
+    imagemagick \
+    qbittorrent
 do
     echo -e "\n${Red} *** Installing $package *** ${Color_Off}"
     sudo apt install $package
 done
 
+sudo apt update && sudo apt upgrade -y
 
-# curl installs
 # NVM
 echo -e "\n${Red} *** Installing NVM *** ${Color_Off}"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -61,11 +52,9 @@ nvm use --lts
 echo -e "\n${Red} *** Installing oh-my-zsh *** ${Color_Off}"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
 # Python setup
 python -m ensurepip --upgrade
 pip3 install virtualenv
-
 
 # VS Code
 echo -e "\n${Red} *** Installing VS Code *** ${Color_Off}"
@@ -83,15 +72,11 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install sublime-text
 
-
 # Discord
 echo -e "\n${Red} *** Installing Discord *** ${Color_Off}"
 wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo gdebi ~/discord.deb
 rm ~/discord.deb
-
-#btop
-
 
 # Cleanup
 echo -e "\n${Red} *** Cleaning up *** ${Color_Off}"
