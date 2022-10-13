@@ -7,3 +7,5 @@ if [[ "${FILE#*.}" == "cpp" ]]; then
 else
 	echo "Must be a .cpp file"
 fi
+
+# Compiler script for C++ files
