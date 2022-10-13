@@ -1,3 +1,3 @@
 ## The following repository contains instructions for Linux setup. 
 
-### Edited competitive programming folder.  
+### Edited competitive programming folder.
