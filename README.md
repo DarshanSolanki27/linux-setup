@@ -5,6 +5,6 @@
 ###Topics
 
 ### Install Sublime Text Editor
-
+cd desktop
 
 #### 
