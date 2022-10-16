@@ -10,5 +10,5 @@ else
 	echo "Must be a .l file"
 fi
 
-# This is for lex compiler
+# This is for lex compiler. Use it at your own risk,xD
 
