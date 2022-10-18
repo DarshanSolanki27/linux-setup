@@ -1,5 +1,7 @@
 # HACTOBERFEST 2022
 
+This repository has been created to encourage open-source contribution as part of the hacktober fest
+
 ## HERE’S WHAT YOU NEED TO KNOW TO PARTICIPATE AND COMPLETE HACKTOBERFEST:
 
 - Register anytime between September 26 and October 31
@@ -17,6 +19,10 @@
 ### SPAMMY PULL/MERGE REQUESTS WILL BE LABELED AS “SPAM.”
 
 ### AVOID SUBMITTING LOW-QUALITY PULL/MERGE REQUESTS SO NO SPOOKY PRs PLEASE XD
+
+### ANY ADDITIONS THAT WOULD MAKE LINUX EXPERIENCE BETTER ARE WELCOME
+
+### PULL REQUEST FORMAT: [Branch name] | [Summary of the change] 
 
 ## GOOD LUCK !! HAVE A GREAT AND SPOOKY HALLOWEEN !!
 
