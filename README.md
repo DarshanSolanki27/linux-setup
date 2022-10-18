@@ -1,10 +1,6 @@
-## The following repository contains instructions for Linux setup. 
+## This repository contains instructions for Linux setup and some cool hacks to make linux experience better. 
 
-### Edited competitive programming folder.......
-
-###Topics
-
-### Install Sublime Text Editor
-cd desktop
-
-#### 
+### Topics
+- Configuration files for oh-my-zsh
+- Installation and setup of required frameworks, tools and libraries for starting off with software development
+- Terminal emulator 'cool-retro-term'
